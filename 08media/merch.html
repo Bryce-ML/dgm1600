@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Wikibeat: Your Guide to Music Genres</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bryce Lindloff">
+    <meta name="description" content="Learn about your favorite music genres, different genres, and artists!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="wikibeat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/Unit07SiteLogoCompress.png" alt="Wikibeat Logo" width="191" height="100">
+        <div>
+            <h1>Wikibeat</h1>
+            <p>Your Guide to Music Genres</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="genres.html">List of Music Genres</a></li>
+            <li><a href="gallery.html">Artist Gallery</a></li>
+            <li class="active"><a href="merch.html">Mystery Merch Boxes</a></li>
+            <li><a href="connections.html">Artist Connections</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>     <!--This is the beginning of my Main section-->
+        <h1>Mystery Merch Boxes</h1>
+            <form method="get" class="myform" action="thanks.html">
+            
+            <fieldset>
+                <legend>Artist</legend>
+                    <label><input type="radio" name="artist" value="taylor">Taylor Swift</label>
+                    <label><input type="radio" name="artist" value="olivia">Olivia Rodrigo</label>
+                    <label><input type="radio" name="artist" value="weeknd">The Weeknd</label>
+                    <label><input type="radio" name="artist" value="beatles">The Beatles</label>
+                    <label><input type="radio" name="artist" value="kendrick">Kendrick Lamar</label>
+                    <label><input type="radio" name="artist" value="daftpunk">Daft Punk</label>
+                    <label><input type="radio" name="artist" value="skrillex">Skrillex</label>
+                    <label><input type="radio" name="artist" value="porter">Porter Robinson</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Merch Box Selection</legend>
+                    <label><input type="checkbox" name="box" value="small">Small Box (Contains 1 Mystery Shirt + Poster)</label>
+                    <label><input type="checkbox" name="box" value="medium">Medium Box (Contains 1 Mystery Shirt, 1 Random Vinyl Record + Poster)</label>
+                    <label><input type="checkbox" name="box" value="collectors">Collectors Box (Contains 1 Mystery Hoodie, 1 Mystery Shirt, 1 Random Vinyl Record + Poster)</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Delivery Options</legend>
+                    <label><input type="radio" name="shipping" value="standard">Standard Shipping (5-7 Business Days)</label>
+                    <label><input type="radio" name="shipping" value="priority">Priority Shipping (3-5 Business Days)</label>
+                    <label><input type="radio" name="shipping" value="express">Express Shipping (2-3 Business Days)</label>
+                <br>
+                    <label>Preferred Method of Notification*</label>
+                    <select name="notification">
+                        <option value="choose">Please Choose One</option>
+                        <option value="email">Email Me when Delivered</option>
+                        <option value="text">Text Me when Delivered</option>
+                        <option value="call">Call Me when Delivered</option>
+                    </select>
+                    
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label>First Name* <input type="text" name="first_name" required></label>
+                    <label>Last Name* <input type="text" name="last_name" required></label>
+                    <label>Phone Number <input type="tel" name="phone" placeholder="xxx-xxx-xxxx"></label>
+                    <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+            <label><strong>Comments or Concerns</strong>
+                <textarea name="comments" placeholder="Let us know of any specific requests so we can deliver your merch in the best and quickest way possible!"></textarea>
+                </label>
+                <input type="submit" value="Send Delivery Request">
+            </form>
+        </main>
+
+    <footer>     <!--Beginning of Footer section-->
+        <p>&copy; 2024 | Bryce Lindloff  &bull; <a href="mailto:email@gmail.com">Email Us</a></p>
+    </footer>
+</body>
+
+</html>
